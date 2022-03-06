@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSM - Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="brand-icon">
+            <i class="fa-solid fa-list-check"></i>
+        </div>
+        <h2 class="brand-name">Project Status Management</h2>
+    </header>
+    <section class="wrapper">
+        <form class="form-container">
+            <div class="form-group">
+                <label class="form-label">Title:</label>
+                <input type="text" class="form-input" placeholder="Enter Title" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Description:</label>
+                <textarea class="form-text" id="" placeholder="Enter Description" required></textarea>
+            </div>
+            <div class="flex">
+                <div class="form-group-2">
+                    <label class="form-label">People:</label>
+                    <input type="number" min="1" class="form-input" placeholder="Number Of People" required>
+                </div>
+                <div class="form-group-2">
+                    <label class="form-label">Status:</label>
+                    <select class="form-select" id="">
+                        <option value="">--Select Status--</option>
+                        <option value="1">Active</option>
+                        <option value="2">Completed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-add">Add Project</button>
+                <button type="button" class="btn btn-clear">Clear</button>
+            </div>
+        </form>
+    </section>
+    <section class="wrapper">
+        <div class="flex">
+            <div class="active">
+                <h3 class="heading">Active Projects</h3>
+                <ul class="active-list">
+                    <li class="project">
+                        <h4 class="title">Title</h4>
+                        <p class="persons">NUM persons assigned</p>
+                        <h5 class="description">Description</h5>
+                        <button class="btn btn-act">Completed</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="completed">
+                <h3 class="heading">Completed Projects</h3>
+                <ul class="complete-list">
+                    <li class="project">
+                        <h4 class="title">Title</h4>
+                        <p class="persons">NUM persons assigned</p>
+                        <h5 class="description">Description</h5>
+                        <button class="btn btn-deact">Not Completed</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copy-right">
+            <h3 class="left">
+                <a href="https://github.com/Deep1218/TO_DO" target="_blank">&#169; Copyright <script>document.write(new Date().getFullYear())</script>. Made with &hearts; by <span>Deep Patel</span>.
+                </a>
+            </h3>
+            <h3 class="right">
+                <a href="https://github.com/Deep1218" target="__blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </h3>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6538316857.js" crossorigin="anonymous"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
