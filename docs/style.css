@@ -2,6 +2,9 @@
   --first: #8458b3;
   --second: #ede7f8;
   --third: #ffe3ff;
+  --fourth: #d05ba6;
+  --fiveth: #4c4452;
+  --sixth: #332d38;
   --white: #fdf7ff;
 }
 body {
@@ -41,6 +44,16 @@ header .brand-name {
   justify-content: center;
   align-items: center;
 }
+.wrapper .btn {
+  margin: 5px;
+  padding: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
 /* Form */
 .wrapper .form-container {
   border-radius: 8px;
@@ -67,15 +80,112 @@ header .brand-name {
   flex-direction: column;
   width: 50%;
 }
+.wrapper .form-container .form-group-2.left {
+  margin-left: 20px;
+}
 .wrapper .form-container .btn-group {
   margin-top: 12px;
 }
+.wrapper .form-container .btn-group .btn-add,
+.wrapper .form-container .btn-group .btn-clear {
+  background-color: var(--first);
+  transition: all 0.3s ease;
+}
+.wrapper .form-container .btn-group .btn-add:hover,
+.wrapper .form-container .btn-group .btn-clear:hover {
+  background-color: #5c3e7c;
+}
 /* Status list */
-.wrapper .flex {
-  border: 1px solid black;
+.wrapper .flex-2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.wrapper .flex-2 .active,
+.wrapper .flex-2 .complete {
+  border-radius: 5px;
+  width: 50%;
+  height: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+.wrapper .flex-2 .active .heading,
+.wrapper .flex-2 .complete .heading {
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.wrapper .flex-2 .active .heading {
+  background-color: var(--first);
+}
+.wrapper .flex-2 .complete .heading {
+  background-color: var(--fourth);
+}
+.wrapper .active-list,
+.wrapper .complete-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0;
+  max-height: 280px;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+}
+.wrapper .project {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 15px 5px 15px;
+}
+.wrapper .flex-2 .active .project .title,
+.wrapper .flex-2 .complete .project .title {
+  /* border: 1px solid black; */
+  margin: 0;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.wrapper .flex-2 .active .project .title {
+  color: var(--first);
+}
+.wrapper .flex-2 .complete .project .title {
+  color: var(--fourth);
+}
+.wrapper .flex-2 .active .project .persons,
+.wrapper .flex-2 .complete .project .persons {
+  margin: 4px 0 4px 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--fiveth);
+}
+.wrapper .flex-2 .active .project .description,
+.wrapper .flex-2 .complete .project .description {
+  margin: 5px 0 5px 0;
+  color: var(--sixth);
+}
+.wrapper .flex-2 .active .project .btn-act {
+  background-color: var(--first);
+  transition: all 0.3s ease;
+}
+.wrapper .flex-2 .active .project .btn-act:hover {
+  background-color: #7d3ac5;
+}
+.wrapper .flex-2 .complete .project .btn-deact {
+  background-color: var(--fourth);
+  transition: all 0.3s ease;
+}
+.wrapper .flex-2 .complete .project .btn-deact:hover {
+  background-color: #da3ca0;
 }
 /* footer */
 a {
