@@ -18,20 +18,20 @@
         <form class="form-container">
             <div class="form-group">
                 <label class="form-label">Title:</label>
-                <input type="text" class="form-input" placeholder="Enter Title" required>
+                <input type="text" class="form-input" placeholder="Enter Title" id="title" required>
             </div>
             <div class="form-group">
                 <label class="form-label">Description:</label>
-                <textarea class="form-text" id="" placeholder="Enter Description" required></textarea>
+                <textarea class="form-text" placeholder="Enter Description" id="details" required></textarea>
             </div>
             <div class="flex">
                 <div class="form-group-2">
                     <label class="form-label">People:</label>
-                    <input type="number" min="1" class="form-input" placeholder="Number Of People" required>
+                    <input type="number" min="1" class="form-input" placeholder="Number Of People" id="people" required>
                 </div>
                 <div class="form-group-2 left">
                     <label class="form-label">Status:</label>
-                    <select class="form-select" id="">
+                    <select class="form-select" id="status">
                         <option value="">--Select Status--</option>
                         <option value="1">Active</option>
                         <option value="2">Completed</option>
@@ -49,7 +49,7 @@
             <div class="active">
                 <h3 class="heading">Active Projects</h3>
                 <ul class="active-list">
-                    <!-- <li class="project">
+                    <!-- <li class="project" id="0">
                         <h4 class="title">Title</h4>
                         <p class="persons">3 persons assigned</p>
                         <h4 class="description">Description</h4>
