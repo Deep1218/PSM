@@ -19,7 +19,10 @@ export class Active {
         li.append(h4);
         const p = document.createElement('p');
         p.className = 'persons';
-        p.textContent = `${this.Persons} persons assigned`;
+        const span = document.createElement('span');
+        span.textContent = `${this.Persons}`;
+        p.appendChild(span);
+        p.append(' persons assigned');
         li.append(p);
         const h4Des = document.createElement('h4');
         h4Des.className = 'description';

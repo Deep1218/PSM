@@ -39,8 +39,7 @@ reqElements.actList.addEventListener('click', (e: Event) => {
     
     let title: any = li.childNodes[0].textContent;
     title = <String> title;
-    
-    let people: any = li.childNodes[1].textContent;
+    let people: any = li.childNodes[1].childNodes[0].textContent;
     people = <Number> people;
     
     let details: any = li.childNodes[2].textContent;
@@ -62,7 +61,7 @@ reqElements.comList.addEventListener('click', (e: Event) => {
     let title: any = li.childNodes[0].textContent;
     title = <String> title;
     
-    let people: any = li.childNodes[1].textContent;
+    let people: any = li.childNodes[1].childNodes[0].textContent;
     people = <Number> people;
     
     let details: any = li.childNodes[2].textContent;
